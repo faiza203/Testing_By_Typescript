@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import TimerButton from './TimerBtn';
+import TimerButton from './TimerButton';
 
 describe('TimerButton', () => {
   let container;
