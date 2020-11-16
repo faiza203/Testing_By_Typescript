@@ -4,7 +4,7 @@ import App from './App';
 import Timer from '../Timer/Timer';
 
 describe('App', () => {
-  let container;
+  let container:any;
 
   beforeEach(() => (container = shallow(<App />)));
 

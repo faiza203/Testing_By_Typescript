@@ -1,9 +1,9 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import {mount } from 'enzyme';
 import Timer from './Timer';
 
 describe('Timer', () => {
-  let container;
+  let container:any;
 
   beforeEach(() => (container = mount(<Timer />)));
 
@@ -17,7 +17,7 @@ describe('Timer', () => {
 });
 
 describe('mounted Timer', () => {
-  let container;
+  let container:any;
 
   beforeEach(() => (container = mount(<Timer />)));
 

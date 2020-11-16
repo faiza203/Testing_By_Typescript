@@ -5,12 +5,12 @@ import TimerButton from '../TimerButton/TimerButton';
 class Timer extends Component {
   constructor(props) {
     super(props);
-    this.state = {
+
+    this.state  = {
       minutes: 25,
       seconds: 0,
       isOn: false,
     };
-
     this.startTimer = this.startTimer.bind(this);
     this.stopTimer = this.stopTimer.bind(this);
     this.resetTimer = this.resetTimer.bind(this);
@@ -64,17 +64,14 @@ class Timer extends Component {
         </div>
         <div className="timer-button-container">
           <TimerButton
-            className="start-timer"
             buttonAction={this.startTimer}
             buttonValue={'Start'}
           />
           <TimerButton
-            className="stop-timer"
             buttonAction={this.stopTimer}
             buttonValue={'Stop'}
           />
           <TimerButton
-            className="reset-timer"
             buttonAction={this.resetTimer}
             buttonValue={'Reset'}
           />
